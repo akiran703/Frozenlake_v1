@@ -13,6 +13,9 @@ The idea behind Q-learning is that all possible actions and states are mapped in
 1) Initialize the Q-table
 2) use epsilon-greedy policy to determine which action we will take
 3) peform the action and get the reward and next state
-4) update the Q-table with TD target i.e using the forumal Q(A,S)  =  Q(A,S) + alpha * (Rewardt+1  +  gamma * max(Q(A,St+1)) - Q(A,S)
+4) update the Q-table with TD  i.e using the forumal Q(A,S)  =  Q(A,S) + alpha * (Rewardt+1  +  gamma * max(Q(A,St+1)) - Q(A,S)
+
+
+This algo isnt very optimal as the with more actions and states, the table will grow thus becoming inefficient. 
 
 
